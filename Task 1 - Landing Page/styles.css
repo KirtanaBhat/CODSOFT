@@ -1,0 +1,643 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: black;
+}
+
+li,a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  padding: 0 5px;
+  list-style: none;
+}
+
+#pricing{
+  padding: 10% 0 0 0;
+}
+
+.groove{
+  padding-left: 120px;
+  color: white;
+  font-size: 2rem;
+}
+
+.btn{
+  width: 80%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+.btn:hover{
+  color: white;
+  background-color: black;
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.common{
+  font-size: 1rem;
+  font-weight: lighter;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_left{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+}
+
+.text_middle{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+}
+
+.cover{
+  border-radius: 10px;
+  background-image: url("girl_cover_cropped.jpg");
+  height: 60%;
+  margin-right: 20px;
+  background-size: cover;
+}
+
+.media_player{
+  height: 30%;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.icons{
+  padding-left: 3%;
+  margin-bottom: 10px;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon{
+  margin-left: 10px;
+}
+
+.latest-hits, .genres{
+  background-color: black;
+  padding: 10% 0 0 0;
+}
+
+p{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 3%;
+}
+
+.heading{
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-left: 900px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column{
+  margin: 20px 0 0 20px;
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.column::before{
+  content: '';
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+}
+
+.price{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  padding: 20px;
+}
+
+.detail{
+  text-align: left;
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.line{
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.card{
+  text-align: center;
+  padding: 10px;
+  margin: 3% 6% 6% 6%;
+}
+
+.card, .column{
+  padding-left: 20px;
+  padding-top: 20px;
+  float: left;
+  height: 580px;
+  border-radius: 10px;
+  border: 2px solid rgba(255,255,255,0.3);
+  box-shadow: 0 0 40px rgba(10,10,10,0.25);
+}
+
+.background .shape{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child{
+    background: linear-gradient(
+        #AFE1AF,
+        #097969
+    );
+    height: 200px;
+    width: 200px;
+    left: -80px;
+    top: -80px;
+}
+
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #AFE1AF,
+        #097969
+    );
+    height: 200px;
+    width: 200px;
+    right: 350px;
+    bottom: -40px;
+}
+
+.background2 .shape2{
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape2:first-child{
+    background: linear-gradient(
+        #AFE1AF,
+        #097969
+    );
+    height: 100px;
+    width: 100px;
+    left: 175px;
+    top: 1120px;
+}
+
+.shape2:last-child{
+    background: linear-gradient(
+        to right,
+        #AFE1AF,
+        #097969
+    );
+    height: 100px;
+    width: 100px;
+    right: 200px;
+    bottom: -1200px;
+}
+
+.left{
+    line-height: 30px;
+    width: 12%;
+}
+
+.middle{
+    background-color: rgba(255,255,255,0);
+    width: 53%;
+}
+
+.right{
+    width: 22%;
+}
+
+.left_card, .right_card{
+  width: 35%;
+}
+
+@media only screen and (max-width: 1250px) {
+
+  .left{
+      width: 20%;
+  }
+
+  .middle{
+      background-color: rgba(255,255,255,0);
+      width: 68%;
+  }
+
+  .right{
+      width: 93%;
+  }
+
+  .left_card, .right_card{
+    width: 70%;
+  }
+
+  .cover{
+    height: 95%;
+    margin-right: 0;
+    width: 50%;
+  }
+
+}
+
+/* Silder */
+.slidecontainer {
+  width: 96%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  background: white;
+  outline: none;
+  opacity: 1;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px;
+  height: 13px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: white;
+  cursor: pointer;
+}
+
+form{
+    height: 520px;
+    background-color: transparent;
+    transform: translate(-2%,-2%);
+}
+
+.play, .pause{
+  background-color: transparent;
+  border: none
+}
+
+.media_bar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.item{
+  padding: 25px;
+}
+
+.timings{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h5{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --button-height: 0.5rem;
+    --button-color: white;
+}
+
+.fake-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1rem;
+    heigth: 1rem;
+    padding: 1.5rem;
+    border: 0.2rem solid var(--button-color);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 3.1rem rgba(255,255,255, 0.8));
+}
+
+.play {
+    height: 0;
+    width: 0;
+    margin-left: calc(2 * 0.14 * var(--button-height));
+    background: none;
+    border: none;
+    border-top: var(--button-height) solid transparent;
+    border-bottom: var(--button-height) solid transparent;
+    border-left: calc(var(--button-height) * 2 * 0.86) solid var(--button-color);
+}
+
+.pause {
+    position: relative;
+    background: none;
+    border: none;
+    height: calc(var(--button-height) * 2);
+    width: calc(var(--button-height) * 2 * 0.86);
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 33%;
+        background: var(--button-color);
+    }
+    &:before {
+        left: 0;
+    }
+    &:after {
+        right: 0;
+    }
+}
+
+.hidden {
+    display:none;
+}
+
+
+
+
+/*
+.latest_hits, .blocks, .image{
+  height: 140px;
+  width: 140px;
+  padding 3px;
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.3);
+  box-shadow: 0 0 40px rgba(10,10,10,0.25);
+
+}
+
+.latest_hits, .blocks, .image, img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+} */
+
+.title{
+  font-size: 1.2rem;
+  color: white;
+}
+
+span{
+  font-size: 0.8rem;
+  color: gray;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 10px;
+}
+
+.cover-1{
+  border-radius: 4px;
+  background-image: url("Album covers/1.jpg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-2{
+  border-radius: 4px;
+  background-image: url("Album covers/2.png");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-3{
+  border-radius: 4px;
+  background-image: url("Album covers/3.jpeg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-4{
+  border-radius: 4px;
+  background-image: url("Album covers/4.jpg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-5{
+  border-radius: 4px;
+  background-image: url("Album covers/5.jpg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-6{
+  border-radius: 4px;
+  background-image: url("Album covers/6.jpeg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-7{
+  border-radius: 4px;
+  background-image: url("Album covers/7.jpg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+
+.cover-8{
+  border-radius: 4px;
+  background-image: url("Album covers/8.jpeg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-9{
+  border-radius: 4px;
+  background-image: url("Album covers/9.jpg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-10{
+  border-radius: 4px;
+  background-image: url("Album covers/10.jpg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-11{
+  border-radius: 4px;
+  background-image: url("Album covers/11.jpg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-12{
+  border-radius: 4px;
+  background-image: url("Album covers/12.jpg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-13{
+  border-radius: 4px;
+  background-image: url("Album covers/13.jpg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-14{
+  border-radius: 4px;
+  background-image: url("Album covers/14.jpeg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-15{
+  border-radius: 4px;
+  background-image: url("Album covers/15.jpg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-16{
+  border-radius: 4px;
+  background-image: url("Album covers/16.jpeg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-20{
+  border-radius: 4px;
+  background-image: url("Album covers/20.jpg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.cover-21{
+  border-radius: 4px;
+  background-image: url("Album covers/21.jpg");
+  height: 10rem;
+  background-size: cover;
+  margin: 10px;
+}
+
+.block{
+  border-radius: 4px;
+  display: inline-grid;
+  flex: 200px 0 0;
+  height: 35vh;
+  width: 24vh;
+  margin: 3% 1% 2% 3%;
+  font-size: 40px;
+  background-color: rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255,255,255,0.3);
+  box-shadow: 0 0 40px rgba(10,10,10,0.25);
+}
+
+.carousel {
+  /* display: flex; */
+  transition: ease 0.5s;
+}
+
+.latest-hits {
+  width: 100%;
+  overflow-x: hidden;
+  margin: auto;
+}
+
+.dots-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.dot {
+  border: none;
+  background: rgba(0, 0, 0, 0.2);
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  outline: none;
+}
+
+.dot:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+.dot.active {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+
+.latest_hits{
+  display: flex;
+  justify-content: center;
+}
